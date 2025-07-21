@@ -47,7 +47,7 @@ export default function Home() {
 
         {/* Stats Cards */}
         <div className="grid grid-cols-2 gap-4 mb-4">
-          <div className="bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-800">
+          <div className="bg-white dark:bg-neutral-950 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-800">
             <div className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
               {time}
             </div>
@@ -55,7 +55,7 @@ export default function Home() {
               Temps restant
             </div>
           </div>
-          <div className="bg-white dark:bg-neutral-900 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-800">
+          <div className="bg-white dark:bg-neutral-950 rounded-xl p-6 shadow-sm border border-neutral-200 dark:border-neutral-800">
             <div className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">
               {count}
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
         {/* Buttons */}
         <div className="flex gap-4">
           <Button
-            className="flex-1 bg-neutral-900 text-white hover:bg-neutral-800 border border-neutral-800 font-medium py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
+            className="flex-1 bg-neutral-950 text-white hover:bg-neutral-800 border border-neutral-800 font-medium py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
             onPress={handleClick}
             isDisabled={time === 0}
           >
@@ -76,7 +76,7 @@ export default function Home() {
           </Button>
           
           <Button 
-            className="flex-1 bg-neutral-900 text-white hover:bg-neutral-800 border border-neutral-800 font-medium py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
+            className="flex-1 bg-neutral-950 text-white hover:bg-neutral-800 border border-neutral-800 font-medium py-3 rounded-xl transition-all duration-200 shadow-sm hover:shadow-md"
             onPress={() => {
               if (intervalId) {
                 clearInterval(intervalId);
